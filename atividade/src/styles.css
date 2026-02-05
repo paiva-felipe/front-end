@@ -1,4 +1,4 @@
-/* CSS focado em Grid com estilização simples de LMC */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: Arial, sans-serif;
 }
 
-/* ERRO: Escondendo o foco */
+
 *:focus {
   outline: none;
 }
