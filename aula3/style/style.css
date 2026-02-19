@@ -10,7 +10,7 @@
     padding: 20px;
     text-align: center;
 }
-#bt_menu, #label-menu{
+#bt_menu, #label_menu{
     display: none;
 }
 
@@ -34,4 +34,106 @@
     text-align: center;
     margin-top: 40px;
     color: sienna;
+}
+/* estrutura inicial GRID desktop */
+
+/* classe/container pai (div) - controlar os conteudos*/
+.vitrine-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.preco{
+    display: block;
+    color: crimson;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.bt_pedido{
+    background-color: rgb(243, 236, 172);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#rodape{
+    background-color: tan;
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* inserçao de midias*/
+@media screen {
+    #topo-loja h1{
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 1.2rem;
+    }
+}
+
+/*tela tablet*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .vitrine-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px), (orientation: portrait) {
+    /* menu hamburguer/responsivo */
+    #label_menu{
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    #menu ul{
+        display: none;
+    }
+    #bt_menu:checked ~ #menu ul{
+        display: block;
+        padding: 10px 0;
+    }
+    .vitrine-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .descricao{
+        display: none;
+    }
+
+    #menu li{
+        display: block;
+        margin: 15px 0;
+        border-bottom: 1px solid saddlebrown;
+        padding-bottom: 10px;
+    }
+}
+
+@media not screen{
+    #menu, .bt_pedido, #label-menu, #bt_menu{
+        display: none;
+
+    }
 }
