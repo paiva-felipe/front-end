@@ -1,0 +1,8 @@
+const topo= document.getElementById("topo-loja")
+const links = document.getElementsByTagName("a")
+const listaCards = document.getElementsByClassName("card")
+console.log("1. O elemento topo:", topo)
+console.log("2. O segundo card da lista:", listaCards[0])
+console.log("3. a lista completa de links", links)
+console.log("4. o endereço (URL) do primeiro link:", links[0].href)
+console.log("5. a cor do cabeçalho:", topo.style.backgroundColor)
