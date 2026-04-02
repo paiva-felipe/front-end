@@ -103,17 +103,19 @@ input {
 /* Missão 2: Estilo para quando o mouse entra no banner (.destaque-dark) */
 /* Dica: Altere a cor de fundo para #2d3436 e a cor da letra (texto) para white. O zoom já deixei pronto! */
 
-/*
+
 .destaque-dark {
-    
-    
+    background-color: #2d3436;
     transform: scale(1.02);
+}
+.destaque-dark p{
+    color:#eee
 }
 .destaque-dark h2 {
     color: #00b894;
     border-color: #00b894;
 }
-*/
+
 
 /* Missão 4: Estilo do card de produto adicionado ao carrinho (.card-carrinho) */
 /* Dica: Adicione uma linha de borda (2px solid #dfe6e9), um espaçamento interno de 15px, um arredondamento nas pontas de 8px e cor de fundo branca (#fff) */
