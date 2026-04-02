@@ -18,7 +18,7 @@ statusReal.innerHTML ="Status: online"
 
 //contar skills
 const qtdSkills= document.querySelector('.skill')
-console.log+(`A quantidade de skils do usuario é ${qtdSkills.lenght}`)
+console.log(`A quantidade de skils do usuario é ${qtdSkills.lenght}`)
 
 
 

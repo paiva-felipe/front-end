@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekStore - O seu portal Nerd</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GeekStore 🕹️</h1>
+      <p id="mensagem-topo">Carregando saudação...</p>
+    </header>
+
+    <main class="container">
+      <section id="banner-promo" class="painel">
+        <h2>Promoção Relâmpago! ⚡</h2>
+        <p>Passe o mouse aqui para ativar o Modo Escuro da promoção.</p>
+      </section>
+
+      <section class="painel">
+        <h2>Calculadora de Action Figure (R$ 85,00)</h2>
+
+        <div class="produto-dica">
+          <img
+            src="src/images/vader.png"
+            alt="Action Figure Darth Vader Colecionável"
+            class="img-produto"
+          />
+        </div>
+
+        <div class="grupo-input">
+          <label for="qtd-item"
+            >Quantidade desejada (Digite para calcular):</label
+          >
+          <input type="number" id="qtd-item" min="1" value="0" />
+        </div>
+        <p class="total">
+          Total a pagar: R$ <strong id="resultado-preco">0.00</strong>
+        </p>
+      </section>
+
+      <section class="painel">
+        <h2>Adicionar ao Carrinho</h2>
+        <div class="grupo-input">
+          <label
+            >Nome do Produto Nerd (Dica: Use 'Action Figure do Vader'):</label
+          >
+          <input
+            type="text"
+            id="nome-produto"
+            placeholder="Ex: Caneca do Darth Vader"
+          />
+        </div>
+        <button id="btn-adicionar" class="btn-primario">
+          Adicionar Produto
+        </button>
+      </section>
+
+      <section class="painel vitrine">
+        <h2>Seu Carrinho de Compras</h2>
+        <button id="btn-limpar" class="btn-secundario">
+          Esvaziar Carrinho
+        </button>
+
+        <div id="lista-carrinho"></div>
+      </section>
+    </main>
+    <script src="src/scripts/script.js"></script>
+  </body>
+</html>
