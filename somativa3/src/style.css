@@ -103,7 +103,7 @@ header h1 {
     display: inline-block;
     justify-content: center;
     width: 100%;
-    justify-content: center;
+    text-align: center;
   }
   .dica-desktop{
     display: none;
