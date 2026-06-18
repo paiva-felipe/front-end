@@ -74,7 +74,7 @@ if(clicado.classList.contains("btn-pedido")){
 
 
     ///acionar ação de salvar pedido
-    salvaraPedido({nome: nomePrato, preco: preco, qtd: quantidade})  //--> padrão "{chave","valor}"
+    salvarPedido({nome: nomePrato, preco: preco, qtd: quantidade})  //--> padrão "{chave","valor}"
     atualizarContadorPedidos()
   }
 })
